@@ -1,0 +1,32 @@
+spring:
+  application:
+    name: Common-Config
+  cloud:                   #注意，如果使用gitlab作为仓库的话，git.url需要在结尾加上.git,github则不用
+    config:
+      label: master   #配置仓库的分支
+      server:
+        git:
+          uri: https://github.com/SpringCloudForZlj/Common-Config.git #配置git仓库地址（GitHub、GitLab）
+          search-paths: respo #配置仓库路径(存放配置文件的目录)
+          username: 15002994538@qq.com            #访问git仓库的账号
+          password: carefull3217            #访问git仓库的密码
+
+
+  boot:
+    admin:
+      client:
+        url: http://localhost:8084   #增加springcloud服务监控
+
+  zipkin:
+    base-url: http://localhost:9411
+
+
+
+server:
+  port: 8888  #默认端口是8888，不能改。如果要改，重新新建一个文件bootstrap.properties server.port=端口。才可以
+
+eureka:   #注册到eureka
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+
