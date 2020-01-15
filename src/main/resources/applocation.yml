@@ -8,7 +8,7 @@ spring:
         git:
           uri: https://github.com/SpringCloudForZlj/Common-Config.git #配置git仓库地址（GitHub、GitLab）
           search-paths: respo #配置仓库路径(存放配置文件的目录)
-          username: 15002994538@qq.com            #访问git仓库的账号
+          username: 15002994538@163.com            #访问git仓库的账号
           password: carefull3217            #访问git仓库的密码
 
 
