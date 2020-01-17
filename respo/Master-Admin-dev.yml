@@ -33,8 +33,8 @@ eureka:
       defaultZone: http://localhost:8761/eureka/   #表示客服端向服务端进行注册，注册的地址是服务端的地址
 
 
-## mapper映射文件
-#mybatis:
-#  mapper-locations: classpath:com.xd.admin/mapper/**.xml
-#  #定义别名
-#  type-aliases-package: com.xd.admin.domain
+# mapper映射文件
+mybatis:
+  mapper-locations: classpath:com.xd.admin/mapper/**.xml
+  #定义别名
+  type-aliases-package: com.xd.admin.domain
