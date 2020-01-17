@@ -37,4 +37,4 @@ eureka:
 mybatis:
   mapper-locations: classpath:com.xd.admin/mapper/**.xml
   #定义别名
-  type-aliases-package: com.xd.admin.domain
+  type-aliases-package: com.xd.common.domain
