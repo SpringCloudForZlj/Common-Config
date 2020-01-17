@@ -36,5 +36,5 @@ eureka:
 # mapper映射文件
 mybatis:
   mapper-locations: classpath:com.xd.swagger/mapper/**.xml
-  #定义别名
-  type-aliases-package: com.xd.swagger.domain
+#  #定义别名
+#  type-aliases-package: com.xd.swagger.domain
