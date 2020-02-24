@@ -4,14 +4,17 @@ spring:
   boot:
     admin:
       client:
-        url: http://localhost:8084
+        url: http://192.168.91.130:8084
+
 server:
   port: 9411  #9411是zipkin的默认端口
 
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://localhost:8761/eureka/
+      defaultZone: http://192.168.91.130:8761/eureka/,http://192.168.91.130:8861/eureka/,http://192.168.91.130:8961/eureka/
+
+
 management:
   metrics:
     web:
