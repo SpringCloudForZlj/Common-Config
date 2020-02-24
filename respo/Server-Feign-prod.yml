@@ -1,0 +1,27 @@
+spring:
+  application:
+    name: Server-Feign
+  thymeleaf:
+    cache: false
+    mode: LEGACYHTML5
+    encoding: UTF-8
+    servlet:
+      content-type: text/html
+  #  cloud:
+  #    config:
+  #      uri: http://localhost:8888  #配置中心的地址
+  #      name: web-admin-feign     #配置文件名字
+  #      label: master        #配置文件所在的分支
+  #      profile: dev        #表示是开发环境
+server:
+  port: 8765
+
+  # 开启Feign的熔断功能
+feign:
+  hystrix:
+    enabled: true
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://192.168.91.132:8761/eureka/

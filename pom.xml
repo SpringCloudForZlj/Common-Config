@@ -8,10 +8,10 @@
         <version>1.0.0-SNAPAHOT</version>
         <relativePath>../Common-Dependencies/pom.xml</relativePath>
     </parent>
-    <artifactId>Common-config</artifactId>
+    <artifactId>Common-Config</artifactId>
     <packaging>jar</packaging>
 
-    <name>Common-config</name>
+    <name>Common-Config</name>
     <url>http://www.funtl.com</url>
     <inceptionYear>2018-Now</inceptionYear>
 
