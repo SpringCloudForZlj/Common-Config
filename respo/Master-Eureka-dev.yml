@@ -4,18 +4,21 @@ spring:
     name: Master-Eureka
   #    链路追踪
   zipkin:
-    base-url: http://localhost:9411
+    base-url: http://192.168.91.130:9411
+  #    base-url: http://localhost:9411
   boot:
     admin:
       client:
-        url: http://localhost:8084
+        url: http://192.168.91.130:8084
+#        url: http://localhost:8084
 #配置服务端口
 server:
   port: 8761
 #配置服务注册中心
 eureka:
   instance:
-    hostname: localhost
+    hostname: 192.168.91.130
+#    hostname: localhost
   client:
     register-with-eureka: false
     fetch-registry: false
